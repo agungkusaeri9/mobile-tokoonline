@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, ScrollView, Image, TextInput} from 'react-native';
-
+import Product from '../../components/Product';
 const Home = () => {
   return (
-    <View style={{backgroundColor: '#FDF0F3'}}>
+    <View>
       <ScrollView>
         <View style={{padding: 20}}>
           <View style={{minHeight: 700}}>
@@ -40,105 +40,95 @@ const Home = () => {
                 }}
                 placeholder="Search"></TextInput>
             </View>
-            <View style={{flexDirection: 'column'}}>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  justifyContent: 'space-between',
-                  marginTop: 20,
-                }}>
-                <View>
-                  <Image
-                    style={{flex: 1}}
-                    source={require('../../assets/image/jaket1.png')}
+            <View>
+              <Text style={{marginTop: 20, fontSize: 25, fontWeight: '600'}}>
+                Terlaris
+              </Text>
+              <View style={{flexDirection: 'row-reverse', marginTop: 10}}>
+                <ScrollView horizontal>
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
                   />
-                  <Text
-                    style={{fontSize: 23, fontWeight: '600', marginTop: 10}}>
-                    Jaket Jeans
-                  </Text>
-                  <Text style={{fontSize: 20, fontWeight: '500'}}>
-                    Rp. 25,000
-                  </Text>
+                  <Product
+                    name="Jaket Wanita Ori Majalengka"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                </ScrollView>
+              </View>
+            </View>
+            <View>
+              <Text style={{fontSize: 25, fontWeight: '600'}}>
+                Mungkin Anda Suka
+              </Text>
+              <View style={{flexDirection: 'row-reverse', marginTop: 10}}>
+                <ScrollView horizontal>
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                  <Product
+                    name="Jaket Wanita Ori Majalengka"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
+                </ScrollView>
+              </View>
+            </View>
+            <View>
+              <Text style={{fontSize: 25, fontWeight: '600'}}>
+                Produk Terbaru
+              </Text>
+              <View style={{flexDirection: 'row', marginTop: 10}}>
+                <View style={{flex: 1}}>
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
+                  />
                 </View>
-                <View>
-                  <Image
-                    style={{flex: 1}}
-                    source={require('../../assets/image/kemeja.png')}
+                <View style={{flex: 1}}>
+                  <Product
+                    name="Jaket Pria Ori Bandung"
+                    price="120000"
+                    image={require('../../assets/image/jaket1.png')}
                   />
-                  <Text
-                    style={{fontSize: 23, fontWeight: '600', marginTop: 10}}>
-                    Baju Kemeja
-                  </Text>
-                  <Text style={{fontSize: 20, fontWeight: '500'}}>
-                    Rp. 125,000
-                  </Text>
                 </View>
               </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  justifyContent: 'space-between',
-                  marginTop: 20,
-                }}>
-                <View>
-                  <Image
-                    style={{flex: 1}}
-                    source={require('../../assets/image/jaket1.png')}
-                  />
-                  <Text
-                    style={{fontSize: 23, fontWeight: '600', marginTop: 10}}>
-                    Jaket Jeans
-                  </Text>
-                  <Text style={{fontSize: 20, fontWeight: '500'}}>
-                    Rp. 25,000
-                  </Text>
-                </View>
-                <View>
-                  <Image
-                    style={{flex: 1}}
-                    source={require('../../assets/image/kemeja.png')}
-                  />
-                  <Text
-                    style={{fontSize: 23, fontWeight: '600', marginTop: 10}}>
-                    Baju Kemeja
-                  </Text>
-                  <Text style={{fontSize: 20, fontWeight: '500'}}>
-                    Rp. 125,000
-                  </Text>
-                </View>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  justifyContent: 'space-between',
-                  marginTop: 20,
-                }}>
-                <View>
-                  <Image
-                    style={{flex: 1}}
-                    source={require('../../assets/image/jaket1.png')}
-                  />
-                  <Text
-                    style={{fontSize: 23, fontWeight: '600', marginTop: 10}}>
-                    Jaket Jeans
-                  </Text>
-                  <Text style={{fontSize: 20, fontWeight: '500'}}>
-                    Rp. 25,000
-                  </Text>
-                </View>
-                <View>
-                  <Image
-                    style={{flex: 1}}
-                    source={require('../../assets/image/kemeja.png')}
-                  />
-                  <Text
-                    style={{fontSize: 23, fontWeight: '600', marginTop: 10}}>
-                    Baju Kemeja
-                  </Text>
-                  <Text style={{fontSize: 20, fontWeight: '500'}}>
-                    Rp. 125,000
-                  </Text>
-                </View>
+              <View style={{flexDirection: 'row'}}>
+                <Product
+                  name="Jaket Pria Ori Bandung"
+                  price="120000"
+                  image={require('../../assets/image/jaket1.png')}
+                />
+                <Product
+                  name="Jaket Wanita Ori Majalengka"
+                  price="120000"
+                  image={require('../../assets/image/jaket1.png')}
+                />
               </View>
             </View>
           </View>
