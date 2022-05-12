@@ -7,6 +7,9 @@ import Register from './pages/Register';
 import ProductShow from './components/Product/show';
 import {StyleSheet} from 'react-native';
 import Topbar from './components/Topbar';
+import LupaPassword from './pages/LupaPassword';
+import KodeVerifikasi from './pages/KodeVerifikasi';
+import PasswordBaru from './pages/PasswordBaru';
 
 const App = () => {
   return (
@@ -14,9 +17,12 @@ const App = () => {
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <Home/> */}
-      <ProductShow/>
-      {/* <Navbar /> */}
-      <Topbar/>
+      {/* <ProductShow/> */}
+      {/* <LupaPassword/> */}
+      {/* <KodeVerifikasi /> */}
+      <PasswordBaru/>
+      <Navbar />
+      {/* <Topbar/> */}
     </View>
   );
 };
