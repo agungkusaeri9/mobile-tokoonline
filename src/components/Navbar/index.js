@@ -3,32 +3,49 @@ import {View,Image,StyleSheet} from 'react-native';
 
 const Navbar = () => {
     return (
-        <View style={styles.boxNavbar}>
-          <View style={{paddingHorizontal:30,alignItems:'center',marginTop:10}}>
-            <Image
-              style={styles.icon}
-              source={require("../../assets/icon/home.png")}
-            ></Image>
-          </View>
-          <View style={{paddingHorizontal:30,alignItems:'center',marginTop:10}}>
-            <Image
-              style={styles.icon}
-              source={require("../../assets/icon/reorder.png")}
-            ></Image>
-          </View>
-          <View style={{paddingHorizontal:30,alignItems:'center',marginTop:10}}>
-            <Image
-              style={styles.icon}
-              source={require("../../assets/icon/shopping_cart.png")}
-            ></Image>
-          </View>
-          <View style={{paddingHorizontal:30,alignItems:'center',marginTop:10}}>
-            <Image
-              style={styles.icon}
-              source={require("../../assets/icon/person.png")}
-            ></Image>
-          </View>
-        </View>
+      <View
+      style={styles.boxNavbar}>
+      <View
+        style={{
+          paddingHorizontal: 30,
+          alignItems: 'center',
+          marginTop: 10,
+        }}>
+        <Image
+          style={styles.icon}
+          source={require('../../assets/icon/home.png')}></Image>
+      </View>
+      <View
+        style={{
+          paddingHorizontal: 30,
+          alignItems: 'center',
+          marginTop: 10,
+        }}>
+        <Image
+          style={styles.icon}
+          source={require('../../assets/icon/reorder.png')}></Image>
+      </View>
+      <View
+        style={{
+          paddingHorizontal: 30,
+          alignItems: 'center',
+          marginTop: 10,
+        }}>
+        <Image
+          style={styles.icon}
+          source={require('../../assets/icon/shopping_cart.png')}></Image>
+      </View>
+      <View
+        style={{
+          paddingHorizontal: 30,
+          alignItems: 'center',
+          marginTop: 10,
+        }}>
+        <Image
+          style={styles.icon}
+          source={require('../../assets/icon/person.png')}></Image>
+      </View>
+    </View>
       );
 }
 const styles = StyleSheet.create({
@@ -41,6 +58,7 @@ const styles = StyleSheet.create({
       left: 0,
       flexDirection: "row",
       justifyContent:'space-between',
+      flexDirection: 'row', height: 55, backgroundColor: 'white'
     }
   });
 

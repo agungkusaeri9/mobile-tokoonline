@@ -8,18 +8,20 @@ import {
   TouchableHighlight,
   Button,
 } from 'react-native';
+import Navbar from '../../components/Navbar';
 
 class Login extends Component {
   render() {
     return (
-      <View style={{padding: 30,minHeight:650}}>
-        <View
-          style={{textAlign: 'center', alignItems: 'center', marginTop: 20}}>
-          <Image source={require('../../assets/image/Logo.png')}></Image>
-          <Text style={{fontSize: 24}}>My App</Text>
-        </View>
+      <View style={styles.boxLogin}>
         <View style={{textAlign: 'center'}}>
-          <Text style={{fontSize: 24, textAlign: 'center', marginTop: 30}}>
+          <Text
+            style={{
+              fontSize: 28,
+              textAlign: 'center',
+              marginTop: 30,
+              fontWeight: '600',
+            }}>
             Login
           </Text>
         </View>
@@ -36,16 +38,17 @@ class Login extends Component {
               placeholder="Password"></TextInput>
           </View>
           <View style={{marginTop: 20}}>
-            <TouchableHighlight>
-              <Button
-                color="#09345C"
-                style={styles.button}
-                title="Login"></Button>
+            <TouchableHighlight style={styles.button}>
+              <Text style={styles.txtButton}>LOGIN</Text>
             </TouchableHighlight>
           </View>
           <View>
-            <Text style={{textAlign:'center',marginTop:15}}>Belum Punya Akun? Register</Text>
-            <Text style={{textAlign:'center',marginTop:5}}>Lupa Password?</Text>
+            <Text style={{textAlign: 'center', marginTop: 15}}>
+              Belum Punya Akun? Register
+            </Text>
+            <Text style={{textAlign: 'center', marginTop: 5}}>
+              Lupa Password?
+            </Text>
           </View>
         </View>
       </View>
@@ -55,11 +58,11 @@ class Login extends Component {
 const styles = StyleSheet.create({
   boxLogin: {
     height: 300,
-    borderWidth: 0.3,
     borderColor: '#A99393',
     marginTop: 40,
     borderRadius: 4,
-    padding: 20,
+    paddingHorizontal: 18,
+    flex: 1,
   },
   textInput: {
     marginBottom: 10,
@@ -77,6 +80,14 @@ const styles = StyleSheet.create({
     height: 41,
     backgroundColor: '#09345C',
     borderRadius: 10,
+    color: 'white',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  txtButton: {
+    color: 'white',
+    fontSize: 14,
   },
 });
 export default Login;

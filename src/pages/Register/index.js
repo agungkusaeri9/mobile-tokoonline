@@ -15,7 +15,51 @@ class Register extends Component {
     return (
       <View>
         <ScrollView>
-          <View style={{padding: 30}}>
+          <View style={styles.boxLogin}>
+            <View style={{textAlign: 'center'}}>
+              <Text style={{fontSize: 28, textAlign: 'center', marginTop: 10,fontWeight:'600'}}>
+                Register
+              </Text>
+            </View>
+            <View style={styles.boxLogin}>
+            <View>
+                <Text style={styles.textInput}>Nama</Text>
+                <TextInput style={styles.input} placeholder="Nama"></TextInput>
+              </View>
+              <View style={{marginTop: 20}}>
+                <Text style={styles.textInput}>Email</Text>
+                <TextInput style={styles.input} placeholder="Email"></TextInput>
+              </View>
+              <View style={{marginTop: 20}}>
+                <Text style={styles.textInput}>Password</Text>
+                <TextInput
+                  secureTextEntry={true}
+                  style={styles.input}
+                  placeholder="Password"></TextInput>
+              </View>
+              <View style={{marginTop: 20}}>
+                <Text style={styles.textInput}>Konfirmasi Password</Text>
+                <TextInput
+                  secureTextEntry={true}
+                  style={styles.input}
+                  placeholder="Konfirmasi Password"></TextInput>
+              </View>
+              <View style={{marginTop: 20}}>
+                <TouchableHighlight style={styles.button}>
+                  <Text style={styles.txtButton}>REGISTER</Text>
+                </TouchableHighlight>
+              </View>
+              <View>
+                <Text style={{textAlign: 'center', marginTop: 15}}>
+                  Sudah Punya Akun? Login
+                </Text>
+                <Text style={{textAlign: 'center', marginTop: 5}}>
+                  Lupa Password?
+                </Text>
+              </View>
+            </View>
+          </View>
+          {/* <View>
             <View
               style={{
                 textAlign: 'center',
@@ -26,7 +70,7 @@ class Register extends Component {
               <Text style={{fontSize: 24}}>My App</Text>
             </View>
             <View style={{textAlign: 'center'}}>
-              <Text style={{fontSize: 28, textAlign: 'center', marginTop: 0}}>
+              <Text style={{fontSize: 24, textAlign: 'center', marginTop: 30}}>
                 Register
               </Text>
             </View>
@@ -54,11 +98,8 @@ class Register extends Component {
                   placeholder="Konfirmasi Password"></TextInput>
               </View>
               <View style={{marginTop: 20}}>
-                <TouchableHighlight>
-                  <Button
-                    color="#09345C"
-                    style={styles.button}
-                    title="Register"></Button>
+                <TouchableHighlight style={styles.button}>
+                  <Text style={styles.txtButton}>REGISTER</Text>
                 </TouchableHighlight>
               </View>
               <View>
@@ -70,7 +111,7 @@ class Register extends Component {
                 </Text>
               </View>
             </View>
-          </View>
+          </View> */}
         </ScrollView>
       </View>
     );
@@ -78,12 +119,11 @@ class Register extends Component {
 }
 const styles = StyleSheet.create({
   boxLogin: {
-    height: 480,
-    borderWidth: 0.3,
     borderColor: '#A99393',
     marginTop: 40,
     borderRadius: 4,
-    padding: 20,
+    paddingHorizontal: 18,
+    flex: 1,
     marginBottom:40
   },
   textInput: {
@@ -102,6 +142,14 @@ const styles = StyleSheet.create({
     height: 41,
     backgroundColor: '#09345C',
     borderRadius: 10,
+    color: 'white',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
+  txtButton: {
+    color: 'white',
+    fontSize: 14,
+  }
 });
 export default Register;

@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text, ScrollView, Image, TextInput} from 'react-native';
-import Product from '../../components/Product';
+import {View, Text, ScrollView, Image, TextInput,StyleSheet} from 'react-native';
+import Product from '../Product';
 const Home = () => {
   return (
     <View>
       <ScrollView>
-        <View style={{padding: 20}}>
+        <View style={styles.wrapper}>
           <View style={{minHeight: 700}}>
             <View
               style={{
@@ -137,4 +137,11 @@ const Home = () => {
     </View>
   );
 };
+const styles = StyleSheet.create({
+  wrapper:{
+    flex:1,
+    marginHorizontal:18,
+    marginTop:20
+  }
+})
 export default Home;

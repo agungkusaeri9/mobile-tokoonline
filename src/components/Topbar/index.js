@@ -17,10 +17,6 @@ const Topbar = (props) => {
 };
 const styles = StyleSheet.create({
     topbar:{
-        position:'absolute',
-        top:0,
-        right:0,
-        left:0,
         elevation:2,
         backgroundColor:'white'
     },  
