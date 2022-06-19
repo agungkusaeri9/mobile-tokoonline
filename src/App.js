@@ -21,7 +21,7 @@ import PasswordCreate from './pages/Password/create';
 const App = () => {
   return (
     <View style={{ backgroundColor:'#FDF0F3',flex:1 }}>
-      <Home/>
+      <Cart/>
       <Navbar/>
     </View>
   );
