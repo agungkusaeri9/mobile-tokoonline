@@ -14,7 +14,7 @@ const ProductShow = () => {
 const [qty,setQty] = useState(2);
   return (
     <View style={{marginBottom: 60}}>
-      <Topbar page={'Prodct Name'} />
+      <Topbar page={'Jaket Jeans Ori Bandung'} />
       <ScrollView>
         <View style={styles.wrapper}>
           <View>
@@ -87,6 +87,20 @@ const [qty,setQty] = useState(2);
                 </TouchableHighlight>
               </View>
             </View>
+            <View style={{ marginTop:10 }}>
+                    <Text>
+                      Keterangan
+                    </Text>
+                    <TextInput style={styles.inputKeterangan}>
+
+                    </TextInput>
+            </View>
+            <TouchableHighlight style={styles.btnAddToCart}>
+              <Text style={{fontSize:14,color:'white'}}>
+                Add To Cart
+              </Text>
+
+            </TouchableHighlight>
           </View>
         </View>
       </ScrollView>
@@ -141,6 +155,22 @@ const styles = StyleSheet.create({
     padding: 0,
     paddingLeft: 10,
   },
+  inputKeterangan: {
+    borderWidth:.3,
+    borderRadius:2,
+    minHeight:80,
+    width:'100%',
+    marginTop:4
+  },
+  btnAddToCart: {
+    padding:10,
+    backgroundColor:'#E96E6E',
+    width:150,
+    alignItems:'center',
+    alignSelf:'center',
+    marginTop:10,
+    borderRadius:20
+  }
 });
 
 export default ProductShow;

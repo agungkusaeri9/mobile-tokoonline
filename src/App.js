@@ -7,6 +7,7 @@ import Register from './pages/Register';
 import ProductShow from './pages/Product/show';
 import {StyleSheet} from 'react-native';
 import Topbar from './components/Topbar';
+<<<<<<< HEAD
 import Cart from './pages/Cart';
 import Transaction from './pages/Transaction';
 import TransactionDetail from './pages/Transaction/show';
@@ -23,6 +24,24 @@ const App = () => {
     <View style={{ backgroundColor:'#FDF0F3',flex:1 }}>
       <Cart/>
       <Navbar/>
+=======
+import LupaPassword from './pages/LupaPassword';
+import KodeVerifikasi from './pages/KodeVerifikasi';
+import PasswordBaru from './pages/PasswordBaru';
+
+const App = () => {
+  return (
+    <View>
+      {/* <Login /> */}
+      {/* <Register /> */}
+      {/* <Home/> */}
+      {/* <ProductShow/> */}
+      {/* <LupaPassword/> */}
+      {/* <KodeVerifikasi /> */}
+      <PasswordBaru/>
+      <Navbar />
+      {/* <Topbar/> */}
+>>>>>>> 5ea8f27a2d68cb88408b25e884c0b71f07f76cc1
     </View>
   );
 };
